@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+
+<!-- Header section of the dashboard -->
+<div class="header">
+  <h1>Chat Server</h1>
+</div>
+
+
+<!-- Main container that holds both the sidebar and the content area -->
+<div class="container">
+
+  <!-- Sidebar navigation -->
+  <div class="sidebar">
+    <nav>
+      <img src="img/logo.png" alt="">
+      <br>
+      <a href="about.html">About</a>
+      <br>
+      <a href="index.html">Chat Server</a>
+      <br>
+      <br>
+      <button class="btn3" id="refreshRooms" onclick="refreshChatList()" <span><i class="fas fa-rotate"></i></span>Refresh List of Rooms</button>
+      <button class="btn1" id="createRoom" onclick="newRoom()">Create Room</button>
+      <ul id="roomsList" class="roomsList"></ul>
+
+    </nav>
+  </div>
+
+
+  <!-- Main content area where chat will be displayed -->
+  <div class="main-content">
+    <input class="enteruser" type="text" id="username" placeholder="Enter username">
+    <button class="btn2"id="enterUserButton" onclick="EnterUser()" <span><i class="fas fa-paper-plane"></i></span>Enter</button>
+    <button class="btn2" id="leaveButton" onclick="UserLeaves()">Leave Chat Room</button>
+    <h1 id="chatTitle">Current Chat Room:</h1>
+    <!--    <textarea id="logMessages" readonly></textarea>-->
+    <textarea id="logMessages" readonly placeholder="Welcome to ChatServer 💬 Enter! Room Code & UserName"></textarea>
+    <input class="entermsg" type="text" id="messageInput" placeholder="Enter message">
+    <button class="btn4" id="imageUp" onclick="image()"><i class="fa-solid fa-upload"></i></button>
+    <button class="btn2"id="sendButton" onclick="sendMessage()" <span><i class="fas fa-paper-plane"></i></span>Send</button>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
+
+
