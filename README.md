@@ -1,4 +1,6 @@
-# Assignment 02 - Web Chat Server
+# Web Chat Server
+
+**Project for CSCI 2020U - Software Systems Development & Integration**
 
 ## Project Information
 
